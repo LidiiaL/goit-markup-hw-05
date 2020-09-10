@@ -237,6 +237,7 @@ transition: 500ms opasity linear;
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
+  outline: none;
 }
 
 
@@ -289,7 +290,6 @@ transition: 500ms opasity linear;
 }
 
 .modal-button {
-
   position: relative;
   position: absolute;
   top: 15px;
@@ -300,6 +300,7 @@ transition: 500ms opasity linear;
   background: #FFFFFF;
   border-radius: 50%;
   border-style: none;
+  outline: none;
 }
 
 /*задаёт стили секции преимущества*/
