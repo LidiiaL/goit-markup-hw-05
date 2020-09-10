@@ -21,9 +21,9 @@
                 Слово Web голубого цвета, слово Studio чёного цвета">
              </a>
               <ul class="list nav-list">  
-                 <li class="nav-item"><a href="index.html" class="link">Студия</a></li>
-                 <li class="nav-item"><a href="portfolio.html" class="link">Портфолио</a></li>
-                 <li class="nav-item"><a href="" class="link">Контакты</a></li>
+                 <li class="nav-item"><a href="index.html" class="nav-link current">Студия</a></li>
+                 <li class="nav-item"><a href="portfolio.html" class="nav-link current">Портфолио</a></li>
+                 <li class="nav-item"><a href="" class="nav-link current">Контакты</a></li>
               </ul>
          </nav>
            <address class="address-links">
@@ -47,16 +47,7 @@
         <section class="hero">
           <div class="container">
              <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-              <a class="hero-order"
-                 href="">Заказать услугу
-             </a>
-             <div class="hero-backdrop">
-                <div class="hero-modal">
-                     <a href="hero-modal-icon">
-                        <svg class="icon close"><use href="./images/icon/sprite.svg#close"></use></svg>
-                     </a>
-                </div>
-             </div>
+             <button class="hero-order" data-modal-open>Заказать услугу</button> 
            </div>
         </section>
 
@@ -111,20 +102,26 @@
 
           <ul class="list exsamples-list">
              <li class="grid item">
+               <div class="examples-cards">
                 <img src="images/service1-copy.jpg" alt="рабочий процесс разработчика. 
                 мужские руки на клавиатуре, два монитора с кодом, 
                 канцелярские мелочи." width="370">
-                <div class="pictures-inscription">Декстопные приложения</div>
+                <span class="pictures-inscription">Декстопные приложения</span>
+              </div>
              </li>   
              <li class="grid item">
+               <div class="examples-cards">
                 <img src="images/service2-copy.jpg" alt="женские руки. в левой смартфон, 
                 правая лежит на клавиатуре ноутбука." width="370">
-                <div class="pictures-inscription">Мобильные приложения</div>
+                <span class="pictures-inscription">Мобильные приложения</span>
+              </div>
              </li>
              <li class="grid item">
+               <div class="examples-cards">
                 <img src="images/service3.jpg" alt="графический планшет в женских 
                 руках на фоне компьютера и компьютерной мышки." width="370">
-                <div class="pictures-inscription">Дизайнерские решения</div>
+                <span class="pictures-inscription">Дизайнерские решения</span>
+              </div>
              </li>
          </ul>
      </div>
@@ -332,9 +329,9 @@
             Слово Web голубого цвета, слово Studio , белого цвета"
           >
        <address class="address-links">
-             <p class="footer-real-address">г. Киев, пр-т Леси Украинки, 26</p> <br>
+             <p class="footer-real-address">г. Киев, пр-т Леси Украинки, 26</p>
              <a href="mailto:info@example.com" class="mail-link">info@example.com</a>
-             <br> 
+               <br>
              <a href="tel:+38-099-111-11-11" class="phone-link">+38 099 111 11 11</a>
        </address>
     </div>
@@ -367,5 +364,15 @@
     </div>
 </footer>
 
+<div class="hero-backdrop is-hidden" data-modal>
+  <div class="hero-modal is-hidden">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button data-modal-close class="modal-button"> <!--href="hero-modal-icon"-->
+          <svg class="icon-close"><use href="./images/icon/sprite.svg#close"></use></svg>
+        </button>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
