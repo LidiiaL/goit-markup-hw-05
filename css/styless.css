@@ -134,12 +134,12 @@
   margin-right: 50px;
 }
 
-/*.nav-item :focus,
+.nav-item :focus,
 .nav-item :hover,
 .nav-item :active {
   color: var(--accent-color);
   transition: var(--animation);
-  }*/
+  }
 
   .nav-link {
     color: var(--secondary-text-color);
